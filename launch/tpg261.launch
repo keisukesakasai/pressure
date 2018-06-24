@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="pressure" name="tpg261_status" type="tpg261_pub.py" required="true">
+    <!-- <remap from="tpg261" to="tpg261_1" /> -->
+    <param name="~host" value="192.168.100.112" />
+    <param name="~rate" value="1" />
+  </node>
+</launch>
